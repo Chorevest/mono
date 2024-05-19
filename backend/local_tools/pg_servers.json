@@ -1,0 +1,14 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "Local Postgres Server",
+            "Group": "Local",
+            "Host": "backend-database",
+            "Port": 5432,
+            "MaintenanceDB": "postgres",
+            "Username": "dev",
+            "PassFile": "/pgpass",
+            "SSLMode": "prefer"
+        }
+    }
+}

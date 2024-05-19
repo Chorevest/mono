@@ -1,0 +1,65 @@
+version: "3"
+
+networks:
+  backend_network: null
+
+services:
+  server:
+    container_name: backend-server
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_USER=dev
+      - DB_PASSWORD=password
+      - DB_NAME=backend
+      - DB_HOST=backend-database
+      - DB_PORT=5432
+      - MIGRATE_DB=true
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - backend_network
+    volumes:
+      - ./db/seed/seeds:/app/seeds
+
+  db:
+    container_name: backend-database
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_USER=dev
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=backend
+      - POSTGRES_HOST=localhost
+      - POSTGRES_PORT=5432
+    ports:
+      - 5432:5432
+    networks:
+      - backend_network
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U dev -d backend" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    restart: always
+    logging:
+      driver: none
+    depends_on:
+      - db
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=password
+    ports:
+      - 80:80
+    networks:
+      - backend_network
+    volumes:
+      - ./local_tools/pg_servers.json:/pgadmin4/servers.json
+      - ./local_tools/pgpass:/pgpass
