@@ -113,6 +113,12 @@ const SignUp = () => {
           >
             Sign in
           </Link>
+          <Link
+            href="././../index"
+            className="text-lg font-psemibold text-secondary"
+          >
+            nvm, go home
+          </Link>
         </View>
       </ScrollView>
     </SafeAreaView>

@@ -84,10 +84,16 @@ const SignIn = () => {
             I don't have an account
           </Text>
           <Link
-            href="../../home"
+            href="./sign-up"
             className="text-lg font-psemibold text-secondary"
           >
             Sign up
+          </Link>
+          <Link
+            href="././../index"
+            className="text-lg font-psemibold text-secondary"
+          >
+            nvm, go home
           </Link>
         </View>
       </ScrollView>

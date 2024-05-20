@@ -5,7 +5,7 @@ import path from "../assets/images/path.png";
 import logo from "../assets/images/logo.png";
 import logoSmall from "../assets/images/logo-small.png";
 import splashFamily from "../assets/images/splash-family.png";
-import empty from "../assets/images/empty.png";
+import empty from "../assets/images/empty-chores.png";
 
 export default {
   profile,

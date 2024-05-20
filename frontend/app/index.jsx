@@ -46,6 +46,7 @@ export default function App() {
             containerStyles="w-full mt-7"
           />
         </View>
+        <Link href="../../home">Go to home</Link>
       </ScrollView>
 
       <StatusBar backgroundColor="#161622" style="light" />
