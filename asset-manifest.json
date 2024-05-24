@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Chorevest/mono/landing/static/css/main.c1f2fb33.css",
+    "main.js": "/Chorevest/mono/landing/static/js/main.c47e16e6.js",
+    "static/media/main.png": "/Chorevest/mono/landing/static/media/main.8ae6d15f785f649c9eda.png",
+    "static/media/heroImg.png": "/Chorevest/mono/landing/static/media/heroImg.fe4452b53f97cd48959f.png",
+    "index.html": "/Chorevest/mono/landing/index.html",
+    "main.c1f2fb33.css.map": "/Chorevest/mono/landing/static/css/main.c1f2fb33.css.map",
+    "main.c47e16e6.js.map": "/Chorevest/mono/landing/static/js/main.c47e16e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1f2fb33.css",
+    "static/js/main.c47e16e6.js"
+  ]
+}
