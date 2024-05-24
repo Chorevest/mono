@@ -1,4 +1,4 @@
-import React, { UseState } from "react";
+import { useState } from "react";
 import "./Navbar.css"; // Import a CSS file for styling
 import logo from "../assets/images/chorevest_logo.png"; // Adjust the path to your logo image
 

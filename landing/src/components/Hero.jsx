@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./Hero.css"; // Import a CSS file for styling
 import heroImg from "../assets/images/heroImg.png"; // Adjust the path to your logo image
 // import { Quiz } from "./Quiz.jsx";
@@ -65,7 +65,7 @@ function Hero() {
     <div className="hero">
       {!showResults ? (
         <>
-          <h1>Where should you invest for your child's future?</h1>
+          <h1>Where should you invest for your child`&apos;`s future?</h1>
           <text>
             Take our quiz below to get a personalized investment account
             recommendation for your child

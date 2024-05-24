@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./KeyFeatures.css";
 import featureImg1 from "../assets/images/featureImg1.png"; // Example image paths
 import featureImg2 from "../assets/images/featureImg2.png";
