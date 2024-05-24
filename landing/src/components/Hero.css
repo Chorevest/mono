@@ -1,0 +1,107 @@
+.hero {
+  text-align: center;
+  background: radial-gradient(#67d4cf, #0d817c);
+  color: white; /* Optional: Makes text easier to read on dark background */
+  min-height: 100vh; /* Ensures the hero section covers the full viewport height */
+  min-width: 100vw; /* Ensures the hero section covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.progress {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-style: round;
+  background-color: lightgray;
+  margin: 0 5px;
+}
+
+.circle.active {
+  background-color: #67d4cf;
+}
+
+.quizbox {
+  background: #0d817c;
+  height: 60%;
+  width: 40%;
+  padding: 50px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.quiz {
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3px;
+}
+
+.options button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 8px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.results-left {
+  flex: 1;
+  text-align: left;
+}
+
+.results-right {
+  flex: 1;
+  text-align: center;
+}
+
+.results-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.results-right input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  width: 80%;
+}
+
+.results-right button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .results {
+    width: 100%;
+  }
+
+  .results {
+    width: 100%;
+  }
+}

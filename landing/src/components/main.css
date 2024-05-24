@@ -1,0 +1,9 @@
+.fit {
+  min-width: 100vw;
+}
+@media (max-width: 768px) {
+  .fit {
+    padding: 20px;
+    width: 100%;
+  }
+}
