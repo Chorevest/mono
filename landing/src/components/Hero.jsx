@@ -65,7 +65,7 @@ function Hero() {
     <div className="hero">
       {!showResults ? (
         <>
-          <h1>Where should you invest for your child`&apos;`s future?</h1>
+          <h1>Where should you invest for your child&apos;s future?</h1>
           <text>
             Take our quiz below to get a personalized investment account
             recommendation for your child
